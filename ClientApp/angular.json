@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "TimeLogger"
+  "defaultProject": "TimeLogger",
+  "cli": {
+    "analytics": "c64fa76e-92e3-4edf-b63f-1533259a7c0a"
+  }
 }
