@@ -1,4 +1,136 @@
-<header>
+<!-- <header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">TimeLogger</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/counter']"
+              >Counter</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
+              >Fetch data</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header> -->
+
+<div class="main">
+  <div class="d-flex flex-column flex-shrink-0" style="width: 180px;">
+    <a [routerLink]="['/']" class="d-flex justify-content-center mt-4 mb-3 px-3 text-decoration-none">
+      <img src="./assets/images/merit-logo.png" />
+    </a>
+    <div class="d-flex justify-content-center px-3 mt-2">
+      <span class="projectName">Work Force
+        Management System</span>
+    </div>
+    <div class="d-flex justify-content-center my-2 mx-2 px-3">
+      <span class="projectVersion">Version 2.0</span>
+    </div>
+    <div class="hrSeparate m-3"></div>
+    <div class="menuArea">
+      <ul class="nav nav-pills flex-column mb-auto  px-3 ">
+        <li class="nav-item">
+          <a href="#" class="nav-link my-1 active" aria-current="page">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            Timesheet
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link my-1 link-dark">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link my-1 link-dark">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            Leave Details
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link my-1 link-dark">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link my-1 link-dark">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            My Profile
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link my-1 link-dark">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            Notifications
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link my-1 link-dark">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            Settings
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link my-1 link-dark">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            Help & Support
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link my-1 link-dark">
+            <img src="./assets/images/timesheet-icon.svg" class="me-1" />
+            Release Notes
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hrSeparate m-3"></div>
+    <div class="text-center px-3 copyRight">
+      <div>© Merit Group.<br>
+        All right reserved.</div>
+      <div class="my-3">Powered by Merit IT</div>
+      <nav class="nav d-flex justify-content-center">
+        <a class="nav-link link-secondary w-100" aria-current="page" href="#">Help</a>
+        <a class="nav-link link-secondary w-100" href="#">Privacy Policy</a>
+        <a class="nav-link link-secondary w-100" href="#">Terms of Service</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<!--<header>
   <nav
     class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
   >
@@ -42,3 +174,4 @@
     </div>
   </nav>
 </header>
+  -->

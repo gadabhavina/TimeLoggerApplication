@@ -3,6 +3,15 @@
 /* Provide sufficient contrast against white background */
 @import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+body {
+  background: url(./assets/images/timelogger-bg.png) top center no-repeat fixed;
+  background-size: cover;
+  color: #000;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 20px;
+}
 
 a {
   color: #0366d6;
@@ -16,4 +25,108 @@ code {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+
+h1 {
+  color: #33348E;
+  text-align: center;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+h2 {
+  color: #33348E;
+  text-align: center;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+h3 {
+  color: #33348E;
+  color: #000;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 7px 15px;
+  color: #FFF;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #33348E;
+  border-color: #33348E;
+}
+
+.btn-primary:hover {
+  background-color: #272885;
+  border-color: #272885;
+}
+
+.mt-n1 {
+  margin-top: -0.25rem !important;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-custom {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12.5px);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10) inset;
+  min-height: 60px;
+  margin-left: 180px;
+  position: sticky;
+  top: 0;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  z-index: 1000;
+}
+
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.leftside-menu {
+  z-index: 1000;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  width: 180px;
+  min-width: 180px;
+  padding-bottom: calc(var(--ct-footer-height) + 0.75rem);
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.hrSeparate {
+  min-height: 1px;
+  height: 1px !important;
+  background-color: #D9D9D9;
+}
+
+.copyRight {
+  color: #5F6368;
+  text-align: center;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

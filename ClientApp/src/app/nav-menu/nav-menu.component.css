@@ -1,4 +1,4 @@
-a.navbar-brand {
+/* a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
@@ -15,4 +15,44 @@ html {
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+} */
+
+.projectName {
+  color: #33348E;
+  text-align: center;
+  font-size: 12px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projectVersion {
+  color: #5F6368;
+  text-align: center;
+  font-size: 9px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav-link {
+  padding: 0.5rem 0.5rem;
+}
+
+.menuArea {
+  min-height: calc(100vh - 410px);
+  overflow: auto;
+}
+.nav-pills{
+  max-width: 175px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #33348E;
+  background-color: #ffffff;
+  border-radius: 3px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
 }
