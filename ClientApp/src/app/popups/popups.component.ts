@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
-// @Component({
-//   selector: 'app-nav-menu',
-//   templateUrl: './nav-menu.component.html',
-//   styleUrls: ['./nav-menu.component.css']
-// })
-// export class NavMenuComponent {
+@Component({
+  selector: 'app-popup',
+  templateUrl: './popups.component.html',
+  styleUrls: ['./popups.component.css']
+})
+export class PopupComponent {
 //   isExpanded = false;
 
 //   collapse() {
@@ -15,4 +15,4 @@ import { Component } from '@angular/core';
 //   toggle() {
 //     this.isExpanded = !this.isExpanded;
 //   }
-// }
+}
