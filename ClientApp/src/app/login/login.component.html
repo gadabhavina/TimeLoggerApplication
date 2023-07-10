@@ -5,20 +5,20 @@
       <div class="login-page justify-content-center align-items-center">
         <div class="row">
           <div class="col-md-6 ps-0 d-none d-md-block">
-            <div action="" class="row justify-content-center align-items-center" style="height:400px">
+            <div action="" class="row justify-content-center align-items-center">
               <div class="col-12">
-                <img src="./assets/images/merit-logo.png" />
+                <img src="../../image/merit-logo.png">
               </div>
               <div class="col-12">
                 <div class="d-flex justify-content-center">
-                  <img src="./assets/images/timelogger.png" />
+                  <img src="../../image/timelogger.png">
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6 pe-0 border-start border-2">
             <div class="row ms-2 justify-content-center align-items-center" style="height:400px">
-              <form action="" class="row g-3 mt-n1">
+              <form name="form" (ngSubmit)="onLogin()" #login="ngForm" [formGroup]="loginForm" class="row g-3 mt-n1">
                 <div class="col-12 mt-n1">
                   <h1>Work Force Management System</h1>
                   <div class="text-center link-secondary">
@@ -30,21 +30,28 @@
                 </div>
 
                 <div class="col-12">
-                  <mat-form-field appearance="outline" class="full-width">
-                    <mat-label>Employee ID</mat-label>
-                    <input matInput placeholder="Employee ID (Ex. 603319)">
-                  </mat-form-field>
-
-                  <mat-form-field appearance="outline" class="full-width">
-                    <mat-label>Password</mat-label>
-                    <input matInput placeholder="Password" type="password">
-                  </mat-form-field>
-                  <a href="#" class="float-start text-primary">Forgot User ID/Password?</a>
+                  <label class="mb-1">Employee ID<span class="text-danger">*</span></label>
+                  <div class="input-group input-group-sm">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" name="username" formControlName="username" placeholder="Employee ID">
+                  </div>
                 </div>
 
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary btn-sm px-3">LOGIN</button>
-                  <button type="submit" class="btn btn-secondary btn-sm px-3 mx-2">RESET</button>
+                  <label class="mb-1">Password<span class="text-danger">*</span></label>
+                  <div class="input-group input-group-sm">
+                    <div class="input-group-text">*</div>
+                    <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <a href="#" (click)="onForgetUserId()" class="float-start text-primary">Forgot User ID/Password?</a>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary btn-sm px-3">LOGIN</button>
+                  <button type="button" (click)="onReset()" class="btn btn-secondary btn-sm px-3 mx-2">RESET</button>
                 </div>
               </form>
             </div>

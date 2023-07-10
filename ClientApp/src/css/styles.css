@@ -1,0 +1,83 @@
+body {
+    background: url(../image/timelogger-bg.png) top center no-repeat fixed;
+    background-size: cover;
+    color: #000;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.login-page {
+    max-width: 800px;
+    min-height: 460px;
+    margin: 0 auto;
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    padding: 50px;
+}
+
+.login-maxwidth {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #33348E;
+    text-align: center;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+h2 {
+    color: #33348E;
+    text-align: center;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+h3 {
+    color: #33348E;
+    color: #000;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 7px 15px;
+    color: #FFF;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #33348E;
+    border-color: #33348E;
+}
+
+.btn-primary:hover {
+    background-color: #272885;
+    border-color: #272885;
+}
+
+.mt-n1 {
+    margin-top: -0.25rem !important;
+}
+
+.password-hint {
+    color: #5F6368;
+    font-size: 11px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 16px;
+}
+.password-hint span {
+    color: #008857;
+}
