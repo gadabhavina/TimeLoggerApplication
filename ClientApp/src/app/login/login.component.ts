@@ -10,6 +10,9 @@ import { FormGroup, FormBuilder, NgForm } from '@angular/forms';
 })
 export class LoginComponent {
   public loginForm: FormGroup = this.formBuilder.group({});
+  public forgetUserIdForm: FormGroup = this.formBuilder.group({});
+  public isForgetUserId: boolean = false;
+  public isBackToLogin: boolean = true;
 
   constructor(private formBuilder: FormBuilder) {
     this.createLoginForm();
@@ -33,6 +36,10 @@ export class LoginComponent {
   }
 
   public onForgetUserId(): void {
+    this.isForgetUserId = true
+  }
+
+  public onResetUserId(): void {
 
   }
 
