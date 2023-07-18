@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { employee } from '../login/models/employee';
-import { FormGroup, FormBuilder, NgForm } from '@angular/forms';
+import { FormGroup, FormBuilder, NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -21,8 +21,8 @@ export class LoginComponent {
 
   createLoginForm() {
     this.loginForm = this.formBuilder.group({
-      username: [''],
-      password: [''],
+      username: ['', Validators.required],
+      password: ['', Validators.required],
       email: ['']
     });
   }

@@ -35,6 +35,9 @@
                     <div class="input-group-text">@</div>
                     <input type="text" class="form-control" name="username" formControlName="username" placeholder="Employee ID">
                   </div>
+                  <div class="text-danger" *ngIf="loginForm.get('username')?.dirty && loginForm.get('username')?.errors">
+                    Employee ID is required.
+                  </div>
                 </div>
 
                 <div class="col-12">
@@ -42,6 +45,9 @@
                   <div class="input-group input-group-sm">
                     <div class="input-group-text">*</div>
                     <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
+                  </div>
+                  <div class="text-danger" *ngIf="loginForm.get('password')?.dirty && loginForm.get('password')?.errors">
+                    Password is required.
                   </div>
                 </div>
 
