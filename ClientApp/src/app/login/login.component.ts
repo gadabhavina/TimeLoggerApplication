@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { employee } from '../login/models/employee';
-import { FormGroup, FormBuilder, NgForm } from '@angular/forms';
+import { FormGroup, FormBuilder, NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -21,17 +21,16 @@ export class LoginComponent {
 
   createLoginForm() {
     this.loginForm = this.formBuilder.group({
-      username: [''],
-      password: [''],
+      username: ['', Validators.required],
+      password: ['', Validators.required],
       email: ['']
     });
   }
 
   createForgetUserIdForm() {
     this.forgetUserIdForm = this.formBuilder.group({
-      username: [''],
-      password: [''],
-      email: ['']
+      type: [''],
+      email: ['', Validators.required]
     });
   }
 
@@ -45,11 +44,22 @@ export class LoginComponent {
 
   public onForgetUserId(): void {
     this.isForgetUserId = true,
+    this.isBackToLogin = false;
     this.createForgetUserIdForm();
   }
 
   public onResetUserId(): void {
     this.forgetUserIdForm.reset();
+  }
+
+  public onForgetUser(): void {
+    this.isForgetUserId = false,
+    this.isBackToLogin = true;
+  }
+
+  public onBackToLogin(): void {
+    this.isForgetUserId = false,
+    this.isBackToLogin = true;
   }
 
   
