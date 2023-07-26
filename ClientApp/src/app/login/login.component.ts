@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { employee } from '../login/models/employee';
-import { FormGroup, FormBuilder, NgForm } from '@angular/forms';
+import { FormGroup, FormBuilder, NgForm, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,13 +11,24 @@ import { FormGroup, FormBuilder, NgForm } from '@angular/forms';
 })
 export class LoginComponent {
   public loginForm: FormGroup = this.formBuilder.group({});
+  public forgetUserIdForm: FormGroup = this.formBuilder.group({});
+  public isForgetUserId: boolean = false;
+  public isBackToLogin: boolean = true;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private router: Router) {
     this.createLoginForm();
   }
 
   createLoginForm() {
     this.loginForm = this.formBuilder.group({
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+      email: ['']
+    });
+  }
+
+  createForgetUserIdForm() {
+    this.forgetUserIdForm = this.formBuilder.group({
       username: [''],
       password: [''],
       email: ['']
@@ -24,8 +36,7 @@ export class LoginComponent {
   }
 
   public onLogin(): void {
-
-
+    this.router.navigate(['/home']);
   }
 
   public onReset(): void {
@@ -33,7 +44,12 @@ export class LoginComponent {
   }
 
   public onForgetUserId(): void {
+    this.isForgetUserId = true,
+    this.createForgetUserIdForm();
+  }
 
+  public onResetUserId(): void {
+    this.forgetUserIdForm.reset();
   }
 
   
