@@ -1,9 +1,40 @@
-<body>
-  <div class="wrapper">
-    <div class="leftSide">
-      <!--<app-nav-menu></app-nav-menu>-->
+<!-- Content Area Start Here -->
+<div class="wrapper">
+
+  <!-- Login Page -->
+  <!-- <app-login></app-login> -->
+
+  <!-- Floating Menu -->
+  <floating-menu></floating-menu>
+
+  <!-- RightSide Start Here -->
+  <div class="rightSide">
+    <!-- Container Area Start Here -->
+    <div class="containerArea">
+      <!-- Page Header -->
+      <page-header></page-header>
+
+      <!-- Emoji Popup -->
+      <app-popup></app-popup>
+
+      <!-- TimeSheet -->
+      <time-sheet></time-sheet>
+
+      <!-- Add Activity -->
+      <!-- <add-activity></add-activity> -->
+
     </div>
-     
-     <router-outlet></router-outlet> 
+    <!-- Container Area End Here -->
   </div>
-</body>
+  <!-- RightSide End Here -->
+
+  <!-- LeftSide Start Here -->
+  <div class="leftSide">
+    <!-- Nav Menu -->
+    <app-nav-menu></app-nav-menu>
+  </div>
+  <!-- LeftSide End Here -->
+
+  <!-- <router-outlet></router-outlet> -->
+</div>
+<!-- Content Area End Here -->

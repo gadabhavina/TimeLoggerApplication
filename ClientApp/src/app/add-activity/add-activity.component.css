@@ -1,0 +1,33 @@
+/* Add Activity */
+.sideDrawer {
+    width: 100%;
+    max-width: 550px;
+    /* height: calc(100vh - 60px); */
+    height: calc(100vh - 0px);
+    margin: 0 0 0 auto;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12.5px);
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100; */
+}
+
+.sideDrawer .header {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12.5px);
+    width: 550px;
+    height: 60px;
+}
+
+.sideDrawer .header h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}

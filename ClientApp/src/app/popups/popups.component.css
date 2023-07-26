@@ -9,6 +9,175 @@
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
 }
 
+.popupTitle {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.topicName {
+    display: inline-flex;
+    padding: 7px 15px;
+    align-items: flex-start;
+    color: #212121;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background: #F5F5F5;
+}
+
+.topicTitle {
+    color: #33348E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.topicQuestion {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.breakTitle {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.breakBlock {
+    border: 2px solid #EBEBEB;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.breakBlock:hover {
+    /* border: 2px solid #d6d6d6; */
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(51, 136, 142, 0.15);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(51, 52, 142, 0.15);
+    box-shadow: 0px 0px 10px 0px rgba(51, 52, 142, 0.15);
+}
+
+.breakBlock.selectedBreak {
+    background: #f7f7f7;
+    border: 2px solid #33348E;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(51, 136, 142, 0.15);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(51, 52, 142, 0.15);
+    box-shadow: 0px 0px 10px 0px rgba(51, 52, 142, 0.15);
+}
+
+.breakIcon {
+    /* min-height: 70px; */
+}
+
+.breakIcon img {
+    width: 18px;
+}
+
+.breakTime {
+    color: #5F6368;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.breakText {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.breakBlock:hover .breakText {
+    color: #33348E;
+}
+
+.breakBlock.selectedBreak .breakText {
+    color: #33348E;
+    font-weight: 700;
+}
+
+
+.questionCount {
+    color: #5F6368;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.questionText {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.answerText {
+    color: #000;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.stepsCount {
+    color: #212121;
+    text-align: right;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    display: inline-flex;
+    padding: 2px 15px;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: #F5F5F5;
+}
+
+.scoreValue {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
 .emojiBlock {
     border-radius: 15px;
     border: 2px solid #EBEBEB;
@@ -49,6 +218,46 @@
 .emojiActive .emojiBlockTitle {
     background: #33348E;
     color: #FFF;
+}
+
+.emojiTrackHistory {
+    color: #33348E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.emojiTrackBlock {
+    display: flex;
+    padding: 2px 4px;
+    align-items: center;
+    border-radius: 60px;
+    background: #F5F5F5;
+}
+
+.emojiHistoryIcon {
+    width: 38px;
+    height: 38px;
+}
+
+.emojiHistoryTitle {
+    color: #212121;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.emojiHistoryCaption {
+    color: #212121;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 .topLine {
