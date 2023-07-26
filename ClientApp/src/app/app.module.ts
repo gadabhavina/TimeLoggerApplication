@@ -11,9 +11,15 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { LoginComponent } from './login/login.component';
 import { PopupComponent } from './popups/popups.component';
+import { AddActivityComponent } from './add-activity/add-activity.component';
+import { TimeSheetComponent } from './time-sheet/time-sheet.component';
+import { HeaderComponent } from './header/header.component';
+import { FloatingMenuComponent } from './floating-menu/floating-menu.component';
+
+
+// Material Components
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
 
 @NgModule({
   declarations: [
@@ -23,7 +29,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CounterComponent,
     FetchDataComponent,
     LoginComponent,
-    PopupComponent
+    PopupComponent,
+    AddActivityComponent,
+    TimeSheetComponent,
+    HeaderComponent,
+    FloatingMenuComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

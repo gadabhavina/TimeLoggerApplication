@@ -7,11 +7,11 @@
           <div class="col-md-6 ps-0 d-none d-md-block">
             <div action="" class="row justify-content-center align-items-center">
               <div class="col-12">
-                <img src="../../image/merit-logo.png">
+                <img src="./assets/images/merit-logo.png">
               </div>
               <div class="col-12">
                 <div class="d-flex justify-content-center">
-                  <img src="../../image/timelogger.png">
+                  <img src="./assets/images/timelogger.png">
                 </div>
               </div>
             </div>
@@ -30,27 +30,25 @@
                 </div>
 
                 <div class="col-12">
-                  <label class="mb-1">Employee ID<span class="text-danger">*</span></label>
+                  <!-- <label class="mb-1">Employee ID<span class="text-danger">*</span></label>
                   <div class="input-group input-group-sm">
                     <div class="input-group-text">@</div>
                     <input type="text" class="form-control" name="username" formControlName="username" placeholder="Employee ID">
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <label class="mb-1">Password<span class="text-danger">*</span></label>
-                  <div class="input-group input-group-sm">
-                    <div class="input-group-text">*</div>
-                    <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
-                  </div>
-                </div>
-
-                <div class="col-sm-12">
+                  </div> -->
+                  <mat-form-field appearance="outline" class="full-width">
+                    <mat-label>Email ID</mat-label>
+                    <input matInput placeholder="Email ID">
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="full-width">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password" type="password">
+                  </mat-form-field>
                   <a href="#" (click)="onForgetUserId()" class="float-start text-primary">Forgot User ID/Password?</a>
                 </div>
 
                 <div class="col-12">
-                  <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary btn-sm px-3">LOGIN</button>
+                  <button type="submit" [disabled]="loginForm.invalid"
+                    class="btn btn-primary btn-sm px-3">LOGIN</button>
                   <button type="button" (click)="onReset()" class="btn btn-secondary btn-sm px-3 mx-2">RESET</button>
                 </div>
               </form>

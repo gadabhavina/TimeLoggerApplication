@@ -4,6 +4,12 @@
 @import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+html, body {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
+}
+
 body {
   background: url(./assets/images/timelogger-bg.png) top center no-repeat fixed;
   background-size: cover;
@@ -161,7 +167,8 @@ h3 {
 }
 
 .containerArea {
-  height: calc(100vh - 80px);
+  height: 100%;
+  /* height: calc(100vh - 80px); */
 }
 
 .pageContent {
@@ -181,7 +188,7 @@ h3 {
   top: 0;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
-  z-index: 1000;
+  z-index: 99;
   padding: 14px 20px;
 }
 
@@ -207,7 +214,6 @@ h3 {
   width: 100%;
 }
 
-
 .purpleBorder {
   border-color: #33348E !important;
 }
@@ -220,139 +226,18 @@ h3 {
   border-color: #008857 !important;
 }
 
-/* FloatingArea */
-.floatingArea {
-  display: inline-flex;
-  padding: 10px 8px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  border-radius: 5px 0px 0px 5px;
-  background: #FFF;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
-  position: fixed;
-  right: 0;
-  top: calc(50vh - 130px);
+.close-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
-.floatIcon {
-  padding: 5px;
-  fill: #5F6368;
-  text-align: center;
-  display: block;
-  width: 34px;
-  height: 34px;
-}
-
-.floatIcon:hover {
-  background: #F5F5F5;
-}
-
-.fIcon {
-  fill: #5F6368;
-}
-
-.floatIcon:hover .fIcon {
-  fill: #33348E;
-  background: #F5F5F5;
-}
-
-/* TimeSheet Details  */
-.timeSheetStatus {
-  border-left: 4px solid #0277A9;
-}
-
-.tsTitle {
-  color: #5F6368;
-  font-family: Inter;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.tsValue {
-  color: #000;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.daysList {
-  list-style: none;
-}
-
-.weekDays {
-  padding: 5px 15px;
-  align-items: center;
-  border-radius: 80px;
-  background: #F5F5F5;
-  color: #212121;
+.close-icon:hover {
+  opacity: 1;
   cursor: pointer;
-  border: 1px solid #e1e1e1;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
 }
-
-.weekDays:hover {
-  color: #33348E;
-  background: #ededed;
-  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-}
-
-.weekDays.active {
-  color: #ffffff;
-  background: #33348E;
-}
-
-.weekDays.inActive,
-.weekDays.inActive:hover {
-  cursor: default;
-  color: #C2C2C2;
-  background: #F5F5F5;
-  box-shadow: none;
-}
-
-.weekDays.productive {
-  border: none;
-  cursor: default;
-  color: #212121;
-  background: rgba(0, 200, 128, 0.20);
-}
-
-.weekDays.nonProductive {
-  border: none;
-  cursor: default;
-  color: #212121;
-  background: rgba(229, 62, 49, 0.20);
-}
-
-.weekDays.break {
-  border: none;
-  cursor: default;
-  color: #212121;
-  background: rgba(254, 196, 48, 0.30);
-}
-
-.weekDays.totalDuration {
-  border: none;
-  cursor: default;
-  color: #212121;
-  background: rgba(51, 52, 142, 0.15) !important;
-}
-.weekDays.leave {
-  border: none;
-  color: #ffffff;
-  background: #008857;
-}
-
-
 
 /* Copyright */
 .copyRight {
