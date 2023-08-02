@@ -23,10 +23,14 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\login\models\employee.ts" />
+    <None Remove="ClientApp\src\app\shared\services\dialog.service.ts" />
+    <None Remove="ClientApp\src\app\shared\shared.module.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\login\models\employee.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\services\dialog.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\shared.module.ts" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
